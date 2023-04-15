@@ -31,8 +31,7 @@
         h1, h2, h3, h4, h5, h6 {
             color: #ff3333;
 			text-align: center;
-			
-           
+			           
         }
 
   nav {
@@ -78,9 +77,15 @@
 
         .episodes {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(1fr);
             gap: 20px;
         }
+		
+		@media (orientation: landscape) {
+  .episodes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
         .episode {
             border: 1px solid #ccc;
